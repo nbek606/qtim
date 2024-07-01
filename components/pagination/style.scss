@@ -1,0 +1,47 @@
+ /* кастомный стиль vue-awesome-paginate */
+ .pagination-container {
+    gap: 8px;
+}
+
+.paginate-buttons {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $smokyWhite;
+    color: $black;
+    font-size: 16px;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 12px;
+    cursor: pointer;
+
+    @include reset;
+}
+
+.paginate-buttons.active-page {
+    background-color: $black;
+    color: $white;
+}
+
+.paginate-buttons.back-button,  .paginate-buttons.next-button {
+    background-color: transparent;
+    border: 1px solid $gainsborough;
+    color: #fff;
+
+    svg {
+        height: 13px;
+    }
+}
+
+.paginate-buttons.back-button {
+    svg {
+        rotate: 180deg;
+    }
+}

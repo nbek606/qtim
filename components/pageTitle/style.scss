@@ -1,0 +1,10 @@
+.page__title {
+    padding: 120px 0px 60px 0px;
+    
+    h1 {
+        font-size: 84px;
+        font-weight: 400;
+
+        @include  reset;
+    }
+}

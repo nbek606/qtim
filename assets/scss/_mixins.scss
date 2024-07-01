@@ -1,0 +1,36 @@
+@import './variables.scss';
+
+@mixin screen-sm-up {
+    @media (min-width: $screen-sm) {
+      @content;
+    }
+}
+
+@mixin screen-md-up {
+    @media (min-width: $screen-md) {
+        @content;
+    }
+}
+
+@mixin screen-lg-up {
+    @media (min-width: $screen-lg) {
+        @content;
+    }
+}
+
+@mixin screen-xl-up {
+    @media (min-width: $screen-xl) {
+        @content;
+    }
+}
+
+@mixin screen-2xl-up {
+    @media (min-width: $screen-2xl) {
+        @content;
+    }
+}
+
+@mixin reset {
+    font-family: 'TT Commons', sans-serif;
+    font-weight: 400;
+}

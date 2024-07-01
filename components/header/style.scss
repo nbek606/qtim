@@ -1,0 +1,82 @@
+.header {
+    padding: 0 40px;
+    @include  reset;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 121px;
+    }
+
+    &__logo {
+        a  {
+            color: $black;
+        }
+        svg {
+            width: 84px;
+            height: 25px;
+        }
+    }
+}
+
+.header__nav {
+    display: flex;
+
+    &-list {
+        display: flex;
+        align-items: center;
+    }
+
+    &-item {
+        padding-left: 58px;
+
+        a {
+            font-size: 20px;
+            color: $black;
+        }
+    }
+
+    &-buttons {
+        padding-left: 91px;
+        display: flex;
+    }
+
+    &-locale {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+
+        width: 52px;
+        height: 52px;
+
+        border: 2px solid $smokyWhite;
+        border-radius: 52px;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        background: $black;
+        color: $white;
+        border-radius: 52px;
+
+        font-weight: 400;
+        font-size: 20px;
+
+        max-height: 52px;
+        padding: 16px 32px 16px 32px;
+        margin-left: 16px;
+
+        cursor: pointer;
+    }
+}

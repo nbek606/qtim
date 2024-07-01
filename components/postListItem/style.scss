@@ -1,0 +1,44 @@
+    .post__list-item {
+        display: flex;
+        flex-direction: column;
+        
+        width: 280px;
+
+        @include reset;
+
+        &__img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            width: 100%;
+            aspect-ratio: 1;
+        
+            background: $smokyWhite;
+        }
+
+        &__description {    
+            font-weight: 400;
+            display: -webkit-box;
+            overflow: hidden;
+    
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;  
+
+            padding-top: 24px;
+    
+            line-height: 24px;
+            font-size: 20px;
+            color: $black;
+        }
+
+        &__link  {
+            padding-top: 12px;
+
+            color: $lilac;
+            font-size: 20px;
+            font-weight: 400;
+            transition: all 1s;  
+        }
+    }

@@ -1,0 +1,58 @@
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    position: relative;
+    overflow: hidden;
+    height: 179px;
+
+    padding-top: 107px;
+
+    @include reset;
+
+    &-social {
+        position: relative;
+        display: flex;
+        gap: 32px;
+        bottom: 30px;
+
+        &__item {
+            font-weight: 400;
+            font-size: 16px;
+            color: $black;
+
+            text-underline-offset: 5px;
+
+            text-decoration: underline;
+            text-decoration-thickness: 0.4px;   
+
+            a {
+                color: $black;
+            }
+        }
+    }
+
+    &-ellipse {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        bottom: -179px;
+
+        width: 358px;
+        height: 358px;
+        background: $black;
+
+        border-radius: 358px;
+
+        h3 {
+            font-weight: 400;
+            font-size: 32px;
+
+            padding-top: 122px;
+
+            color: $white;
+        }
+    }
+}

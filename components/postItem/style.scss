@@ -1,0 +1,33 @@
+.post__item  {
+    @include reset;
+
+    &-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 1216px;
+        height: 700px;
+
+        color: $white;
+        font-size: 50px;
+
+        background-color: $purple;
+    }
+
+    &-about {
+        color: $black;
+        padding-top: 80px;
+        width: 695px;
+
+        &__title {
+            font-size: 16px;
+        }
+
+        &__text {
+            font-size: 36px;
+            font-weight: 400;
+            padding-top: 32px;
+        }
+    }
+}
